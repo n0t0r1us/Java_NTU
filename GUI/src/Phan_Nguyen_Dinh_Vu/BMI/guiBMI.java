@@ -2,7 +2,7 @@ package Phan_Nguyen_Dinh_Vu.BMI;
 
 import java.awt.event.*;
 import javax.swing.*;
-
+import java.awt.*;
 public class guiBMI extends javax.swing.JFrame {
  
     guiBMI() {
@@ -19,6 +19,7 @@ public class guiBMI extends javax.swing.JFrame {
         JLabel lbKQ = new JLabel("Chỉ số BMI ");
         lbKQ.setBounds(20, 120, 300, 40);
         fr.add(lbKQ); 
+        
         
         JTextField txtcc = new JTextField("");
         txtcc.setBounds(120, 20, 200, 40); // Kích thước
@@ -42,20 +43,20 @@ public class guiBMI extends javax.swing.JFrame {
                 double bmi = CanNang / Math.pow(ChieuCao, 2);
                // Bạn quá gầy, Bạn nên có một chế độ ăn uống giàu dinh dưỡng - BMI : 
                  if (bmi < 18.5) {
-                     lbKQ.setText("Bạn quá gầy, Bạn nên có một chế độ ăn uống giàu dinh dưỡng - BMI :" +bmi);
+                     lbKQ.setText("<html>Bạn quá gầy <br> Bạn nên có một chế độ ăn uống giàu dinh dưỡng - BMI :" +bmi);
                  } else if (bmi < 25) {
-                     lbKQ.setText("Bạn có một thân hình cân đối cứ thế mà phát huy - BMI : "+bmi);
+                     lbKQ.setText("<html>Bạn có một thân hình cân đối <br> Cứ thế mà phát huy - BMI : "+bmi);
                  } else if (bmi < 30) {
-                     lbKQ.setText("Bạn bị béo phì cấp độ I, bạn nên có một chế độ ăn uống lành mạnh hơn - BMI : "+bmi);
+                     lbKQ.setText("<html>Bạn bị béo phì cấp độ I <br> Bạn nên có một chế độ ăn uống lành mạnh hơn - BMI : "+bmi);
                  } else {
-                     lbKQ.setText("Bạn quá béo, bạn cần có chế độ ăn kiêng ngay và luôn - BMI : "+bmi);
+                     lbKQ.setText("<html> Bạn quá béo <br> Bạn cần có chế độ ăn kiêng ngay và luôn - BMI : "+bmi);
                  }
             }
         });
         
         fr.add(btn);// Thêm nút cho Frame  
  
-        fr.setSize(400, 300);
+        fr.setSize(400, 400);
         fr.setLayout(null);
         fr.setVisible(true);
  
