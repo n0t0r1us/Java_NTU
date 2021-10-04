@@ -2,7 +2,6 @@ package Phan_Nguyen_Dinh_Vu.BMI;
 
 import java.awt.event.*;
 import javax.swing.*;
-import java.awt.*;
 public class guiBMI extends javax.swing.JFrame {
  
     guiBMI() {
@@ -41,7 +40,6 @@ public class guiBMI extends javax.swing.JFrame {
                 double ChieuCao=Double.parseDouble(txtcc.getText());
                 
                 double bmi = CanNang / Math.pow(ChieuCao, 2);
-               // Bạn quá gầy, Bạn nên có một chế độ ăn uống giàu dinh dưỡng - BMI : 
                  if (bmi < 18.5) {
                      lbKQ.setText("<html>Bạn quá gầy <br> Bạn nên có một chế độ ăn uống giàu dinh dưỡng - BMI :" +bmi);
                  } else if (bmi < 25) {
