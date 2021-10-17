@@ -1,43 +1,39 @@
 package Phan_Nguyen_Dinh_Vu.SanPham;
 
 public class Product {
-	private String code;
-	private String name;
-	private String price;
-	/**
-	 * 
-	 */
+	// Các thuộc tính
+	private String maSanPham;
+	private String tenSanPham;
+	private Double giaSanPham;
+	// Xây hàm khởi tạo (được gọi khi ta khai báo 1 đối tượng của lớp SanPham, từ khóa new)
 	public Product() {
-		super();
+		this.maSanPham ="";
+		this.tenSanPham ="";
+		this.giaSanPham = 0.0;
 	}
-	/**
-	 * @param code
-	 * @param name
-	 * @param price
-	 */
-	public Product(String code, String name, String price) {
-		super();
-		this.code = code;
-		this.name = name;
-		this.price = price;
+	public Product (String _maSP, String _tenSP, Double _giaSP) {
+		this.maSanPham =_maSP;
+		this.tenSanPham =_tenSP;
+		this.giaSanPham =_giaSP;
 	}
-	public String getCode() {
-		return code;
-	}
-	public void setCode(String code) {
-		this.code = code;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getPrice() {
-		return price;
-	}
-	public void setPrice(String price) {
-		this.price = price;
-	}
+		
+	// Các Getter (để lấy giá trị các thuộc tính)
+	public String getMaSP( ) {return maSanPham;}
+	public String getTenSP( ) {return tenSanPham;}
+	public Double getGiaSP() {return giaSanPham;}
 	
+	// Các Setter (để gán giá trị cho các thuộc tính)
+	public void setMaSP(String _maSanPham)
+	{
+		maSanPham = _maSanPham;
+	}
+	public void setTenSP(String _tenSanPham)
+	{
+		tenSanPham = _tenSanPham;
+	}
+	public void setGiaSP(Double _giaSanPham)
+	{
+		giaSanPham = _giaSanPham;
+	}
 }
+	

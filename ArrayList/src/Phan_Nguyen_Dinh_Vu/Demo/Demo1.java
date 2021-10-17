@@ -109,7 +109,7 @@ public class Demo1 {
 		textAreaDanhSachTen.setBounds(24, 126, 258, 126);
 		frameMain.getContentPane().add(textAreaDanhSachTen);
 		
-		lblTrangThai = new JLabel("Hi\u1EC7n tr\u1EA1ng th\u00E1i \u0111\u00E3 th\u00EAm");
+		lblTrangThai = new JLabel("");
 		lblTrangThai.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 11));
 		lblTrangThai.setForeground(new Color(128, 0, 128));
 		lblTrangThai.setBounds(224, 48, 179, 14);
